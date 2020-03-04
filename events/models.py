@@ -14,4 +14,5 @@ class Event(models.Model):
     slug = models.SlugField(default=name.replace(" ", "").casefold())
 
 
-class EventMember()
+class EventMember(models.Model):
+    pass
