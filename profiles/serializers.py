@@ -33,7 +33,6 @@ class UserCreateSerializer(serializers.ModelSerializer):
         contact = validated_data['contact']
         year = validated_data['year']
         password = validated_data['password']
-        validuser = User.objects.filter(username=username)
         user_obj = User(
             username=username,
             email_id=email_id,

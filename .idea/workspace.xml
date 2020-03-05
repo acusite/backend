@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77d2bbc4-c51b-456a-8f86-6941413666be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,27 +59,35 @@
       <option name="project" value="LOCAL" />
       <updated>1583427152897</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".gitignore file added">
+      <created>1583427312051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583427312051</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added .gitignore file" />
     <MESSAGE value="Events and event member models added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Events and event member models added" />
+    <MESSAGE value=".gitignore file added" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore file added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583336883651">
       <screen x="0" y="23" width="1920" height="1140" />
     </state>
     <state x="424" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1140@0.23.1920.1140" timestamp="1583336883651" />
-    <state x="584" y="195" key="CommitChangelistDialog2" timestamp="1583427152704">
+    <state x="584" y="195" key="CommitChangelistDialog2" timestamp="1583427311903">
       <screen x="0" y="23" width="1920" height="1140" />
     </state>
-    <state x="584" y="195" key="CommitChangelistDialog2/0.23.1920.1140@0.23.1920.1140" timestamp="1583427152704" />
-    <state x="560" y="333" key="Vcs.Push.Dialog.v2" timestamp="1583427159752">
+    <state x="584" y="195" key="CommitChangelistDialog2/0.23.1920.1140@0.23.1920.1140" timestamp="1583427311903" />
+    <state x="560" y="333" key="Vcs.Push.Dialog.v2" timestamp="1583427314614">
       <screen x="0" y="23" width="1920" height="1140" />
     </state>
-    <state x="560" y="333" key="Vcs.Push.Dialog.v2/0.23.1920.1140@0.23.1920.1140" timestamp="1583427159752" />
+    <state x="560" y="333" key="Vcs.Push.Dialog.v2/0.23.1920.1140@0.23.1920.1140" timestamp="1583427314614" />
   </component>
 </project>

@@ -74,7 +74,7 @@ class ProfileManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
 
-    def create_superuser(self, username, email_id, password):
+    def create_superuser(self, username, email_id, roll_number, contact, password):
         if not username:
             raise ValueError('Username is required')
 
@@ -87,6 +87,8 @@ class ProfileManager(BaseUserManager):
         user = self.model(
             username=username.casefold(),
             email_id=self.normalize_email(email_id).casefold(),
+            roll_number=roll_number,
+            contact=contact,
         )
         user.is_admin = True
         user.year = 'IV',
