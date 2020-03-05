@@ -5,9 +5,13 @@ import string as str
 from random import choice
 
 # Create your models here.
+I = 'I'
+II = 'II'
+III = 'III'
+IV = 'IV'
 
 
-YEAR_CHOICES = (('I', 'I'), ('II', 'II'), ('III', 'III'), ('IV', 'IV'))
+YEAR_CHOICES = ((I, 'I'), (II, 'II'), (III, 'III'), (IV, 'IV'))
 
 IT = 'IT'
 EEE = 'EEE'
@@ -91,7 +95,7 @@ class ProfileManager(BaseUserManager):
             contact=contact,
         )
         user.is_admin = True
-        user.year = 'IV',
+        user.year = 'IV'
         user.set_password(password)
         user.save(using=self._db)
 
