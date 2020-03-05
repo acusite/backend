@@ -64,7 +64,7 @@ class ProfileManager(BaseUserManager):
             raise ValueError("username already been taken")
         user = self.model(
             username=username.casefold(),
-            email_id=email_id.casefold(),
+            email_id=self.normalize_email(email_id).casefold(),
             roll_number=roll_number,
             department=department,
             year=year,

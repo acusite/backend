@@ -33,6 +33,7 @@ class UserCreateSerializer(serializers.ModelSerializer):
         contact = validated_data['contact']
         year = validated_data['year']
         password = validated_data['password']
+        validuser = User.objects.filter(username=username)
         user_obj = User(
             username=username,
             email_id=email_id,
@@ -45,6 +46,16 @@ class UserCreateSerializer(serializers.ModelSerializer):
         user_obj.set_password(password)
         user_obj.save()
         return validated_data
+
+    def validate_username(self, value):
+        user = User.objects.filter(username=value)
+        if user.exists():
+            raise ValidationError("User with username "+value+" already exists")
+
+    def validate_email_id(self, value):
+        user = User.objects.filter(email_id=value)
+        if user.exists():
+            raise ValidationError("User with email_id "+value+" already exists")
 
 
 class UserModificationSerializer(serializers.ModelSerializer):
