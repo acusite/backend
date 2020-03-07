@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('profiles/', include('profiles.urls'), name='profiles_urls'),
     path('events/', include('events.urls'), name='events_urls'),
+    path('registrations/', include('registrations.urls'), name='registrations'),
+    path('acuthon/', include('acuthon.urls'), name='acuthon'),
 ]

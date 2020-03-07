@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     # installed apps
     'profiles',
     'events',
+    'registrations',
+    'acuthon',
 ]
 
 MIDDLEWARE = [

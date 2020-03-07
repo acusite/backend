@@ -2,9 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77d2bbc4-c51b-456a-8f86-6941413666be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/acuthon/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0002_auto_20200307_1546.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0003_acuthonregister_rollnumber.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registrations/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acumen/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/acumen/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acumen/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/acumen/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
