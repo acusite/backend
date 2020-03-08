@@ -1,4 +1,5 @@
 from django.db import models
+
 import string as str
 from random import choice
 

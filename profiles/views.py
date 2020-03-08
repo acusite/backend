@@ -1,5 +1,11 @@
 from rest_framework.generics import CreateAPIView, UpdateAPIView, RetrieveAPIView, ListAPIView
 from rest_framework.views import APIView
+from django.contrib.auth import get_user_model, login, logout
+from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.authtoken.models import Token
+from rest_framework.response import Response
+from rest_framework.status import HTTP_200_OK, HTTP_204_NO_CONTENT, HTTP_400_BAD_REQUEST
+from rest_framework.authentication import TokenAuthentication, SessionAuthentication
 from .serializers import (
     UserCreateSerializer,
     UserModificationSerializer,
@@ -7,12 +13,6 @@ from .serializers import (
     UserPasswordChangeSerializer,
     UserDetailSerializer,
 )
-from django.contrib.auth import get_user_model, login, logout
-from rest_framework.permissions import IsAuthenticated, AllowAny
-from rest_framework.authtoken.models import Token
-from rest_framework.response import Response
-from rest_framework.status import HTTP_200_OK, HTTP_204_NO_CONTENT, HTTP_400_BAD_REQUEST
-from rest_framework.authentication import TokenAuthentication, SessionAuthentication
 from .permissions import IsOwnerOrReadOnly
 
 User = get_user_model()

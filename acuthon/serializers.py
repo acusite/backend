@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from .models import AcuthonRegister, Acuthon
 from rest_framework.exceptions import ValidationError
+from .models import AcuthonRegister, Acuthon
 
 
 class AcuthonRegisterSerializer(serializers.ModelSerializer):
