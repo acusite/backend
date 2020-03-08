@@ -70,6 +70,8 @@ class LogoutUserAPIView(APIView):
     authentication_classes = (TokenAuthentication, SessionAuthentication, )
 
     def get(self, request):
+        token = Token.objects.get(user=request.user)
+        token.delete()
         logout(request)
         return Response(status=HTTP_204_NO_CONTENT)
 

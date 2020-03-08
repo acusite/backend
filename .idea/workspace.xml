@@ -2,34 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77d2bbc4-c51b-456a-8f86-6941413666be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/acuthon/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0002_auto_20200307_1546.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0003_acuthonregister_rollnumber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/acuthon/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrations/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0004_auto_20200308_1328.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0005_acuthonregister_team.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acumen/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/acumen/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acumen/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/acumen/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acuthon/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/acuthon/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acuthon/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/acuthon/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acuthon/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/acuthon/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +87,10 @@
       <screen x="0" y="23" width="1920" height="1140" />
     </state>
     <state x="424" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1140@0.23.1920.1140" timestamp="1583336883651" />
+    <state x="698" y="347" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583654250797">
+      <screen x="0" y="23" width="1920" height="1140" />
+    </state>
+    <state x="698" y="347" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1140@0.23.1920.1140" timestamp="1583654250797" />
     <state x="584" y="195" key="CommitChangelistDialog2" timestamp="1583427311903">
       <screen x="0" y="23" width="1920" height="1140" />
     </state>

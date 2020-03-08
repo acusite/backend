@@ -1,16 +1,17 @@
 from rest_framework import serializers
-from .models import AcuthonRegister
-from events.models import Event
+from .models import AcuthonRegister, Acuthon
 from rest_framework.exceptions import ValidationError
 
 
 class AcuthonRegisterSerializer(serializers.ModelSerializer):
-    event_name = serializers.SerializerMethodField()
+    team = serializers.CharField(max_length=100)
+    email = serializers.EmailField(allow_null=True, allow_blank=True)
+    contact = serializers.CharField(allow_blank=True, allow_null=True)
 
     class Meta:
         model = AcuthonRegister
         fields = [
-            'event_name',
+            'team',
             'member',
             'email',
             'contact',
@@ -18,24 +19,24 @@ class AcuthonRegisterSerializer(serializers.ModelSerializer):
         ]
 
     def create(self, validated_data):
-        event, created = Event.objects.get_or_create(slug='acuthon', name='Acuthon', description='Acuthon event')
-        reg = AcuthonRegister.objects.filter(event=event, member=validated_data["member"])
+        team, created = Acuthon.objects.get_or_create(name=validated_data['team'])
+        reg = AcuthonRegister.objects.filter(team=team, member=validated_data["member"])
         if reg.exists():
             raise ValidationError("Team member already exists")
-        no = AcuthonRegister.objects.filter(event=event)
+        no = AcuthonRegister.objects.filter(team=team)
         if no.exists():
             return AcuthonRegister.objects.create(
-                event=event,
+                team=team,
                 member=validated_data['member'],
                 rollnumber=validated_data['rollnumber'],
             )
         return AcuthonRegister.objects.create_leader(
-            event=event,
+            team=team,
             member=validated_data['member'],
             email=validated_data['email'],
             contact=validated_data['contact'],
             rollnumber=validated_data['rollnumber']
         )
 
-    def get_event_name(self, obj):
-        return str(obj.event.name)
+
+
