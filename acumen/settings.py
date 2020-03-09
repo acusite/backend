@@ -139,3 +139,5 @@ LOGIN_URL = '/profiles/login'
 LOGIN_REDIRECT_URL = ''
 
 LOGOUT_REDIRECT_URL = '/profiles/login'
+
+CORS_ORIGIN_ALLOW_ALL = True

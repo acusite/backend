@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77d2bbc4-c51b-456a-8f86-6941413666be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0006_acuthon_college.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/acuthon/migrations/0007_acuthonregister_college.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acumen/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/acumen/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acuthon/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/acuthon/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acuthon/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/acuthon/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acuthon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/acuthon/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acuthon/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/acuthon/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

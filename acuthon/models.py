@@ -14,9 +14,10 @@ def generate_id():
 
 
 class AcuthonManager(models.Manager):
-    def create(self, name):
+    def create(self, name, college):
         instance = self.model(
             name=name,
+            college=college,
         )
         instance.save()
         return instance
@@ -24,29 +25,32 @@ class AcuthonManager(models.Manager):
 
 class Acuthon(models.Model):
     name = models.CharField(max_length=100, unique=True, blank=False, null=False, default=generate_id)
+    college = models.CharField(max_length=30, blank=False, null=False, default="Vasavi College of Engineering")
     slug = models.SlugField(max_length=100, unique=True, default=generate_id)
 
     objects = AcuthonManager()
 
 
 class AcuthonRegisterManager(models.Manager):
-    def create_leader(self, team, member, contact, rollnumber, email):
+    def create_leader(self, team, member, contact, rollnumber, college, email):
         instance = self.model(
             team=team,
             member=member,
             contact=contact,
             email=email,
             rollnumber=rollnumber,
+            college=college,
         )
         instance.team_leader = True
         instance.save()
         return instance
 
-    def create(self, team, member, rollnumber):
+    def create(self, team, member, rollnumber, college):
         instance = self.model(
             team=team,
             member=member,
             rollnumber=rollnumber,
+            college=college,
         )
         instance.save()
         return instance
@@ -54,6 +58,7 @@ class AcuthonRegisterManager(models.Manager):
 
 class AcuthonRegister(models.Model):
     team = models.ForeignKey(Acuthon, on_delete=models.CASCADE, related_name='Acuthon', null=True)
+    college = models.CharField(max_length=30, blank=True, null=True)
     member = models.CharField(max_length=255)
     team_leader = models.BooleanField(default=False)
     contact = models.CharField(max_length=10, default=' ')
