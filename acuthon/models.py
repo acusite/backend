@@ -31,7 +31,7 @@ class Acuthon(models.Model):
     objects = AcuthonManager()
 
     def __str__(self):
-        return str(self.name)
+        return self.name
 
 
 class AcuthonRegisterManager(models.Manager):

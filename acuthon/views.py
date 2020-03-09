@@ -1,5 +1,5 @@
-from rest_framework.generics import CreateAPIView
-from .serializers import AcuthonRegisterSerializer, TeamRegisterSerializer
+from rest_framework.generics import CreateAPIView, DestroyAPIView
+from .serializers import AcuthonRegisterSerializer, TeamRegisterSerializer, TeamDeleteSerializer
 from .models import AcuthonRegister, Acuthon
 
 # Create your views here.
@@ -22,3 +22,12 @@ class AcuthonRegisterAPIView(CreateAPIView):
 
     def get_serializer_context(self):
         return {'team': self.request.GET.get('team')}
+
+
+class AcuthonDeleteAPIView(DestroyAPIView):
+    lookup_field = 'slug'
+    serializer_class = TeamDeleteSerializer
+    queryset = Acuthon.objects.all()
+
+    class Meta:
+        model = Acuthon

@@ -170,9 +170,22 @@ input[type=submit] {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
    
 }
+.member{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    background-color: #e67e22;
+    color:white;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+   
+}
 
 #submit{
     padding-left: 30%;
+   /* transform:translate(20%,-240%);*/
 }
 
 .btn-full:link,
@@ -214,8 +227,8 @@ input[type=submit]:active {
 /* ----------------------------------------------- */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.stack.imgur.com/RLQNm.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.stack.imgur.com/RLQNm.jpg');
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517503733723-8ea1cf616798?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517503733723-8ea1cf616798?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -555,7 +568,7 @@ cite img {
 /* FORM */
 /* ----------------------------------------------- */
 
-.contact-form {
+.contact {
     width: 60%;
     margin: 0 auto;
 }
@@ -693,7 +706,7 @@ footer p {
 #venue
 {
     width:35%;
-    padding-bottom: 35%;
+    padding-bottom: 50%;
     padding-left:400px;
     padding-top: 30px;;
     transform: translate(95%, -8%);

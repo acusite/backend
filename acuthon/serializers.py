@@ -23,6 +23,16 @@ class TeamRegisterSerializer(serializers.ModelSerializer):
         return Acuthon.objects.create(name=validated_data['name'], college=validated_data['college'])
 
 
+class TeamDeleteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Acuthon
+        fields = [
+            'name',
+            'college',
+            'slug',
+        ]
+
+
 class AcuthonRegisterSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(allow_null=True, allow_blank=True)
     contact = serializers.CharField(allow_blank=True, allow_null=True)
@@ -42,16 +52,6 @@ class AcuthonRegisterSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         team_obj = Acuthon.objects.get(slug=self.context.get('team'))
-        reg = AcuthonRegister.objects.filter(member=validated_data["member"], rollnumber=validated_data['rollnumber'])
-        if reg.exists():
-            registered = AcuthonRegister.objects.filter(
-                team=team_obj,
-                member=validated_data["member"],
-                rollnumber=validated_data['rollnumber']
-            )
-            if registered.exists():
-                raise ValidationError("Team member already exists")
-            raise ValidationError("Team member already exists in some other team")
         no = AcuthonRegister.objects.filter(team=team_obj)
         if no.exists():
             return AcuthonRegister.objects.create(
@@ -68,6 +68,19 @@ class AcuthonRegisterSerializer(serializers.ModelSerializer):
             rollnumber=validated_data['rollnumber'],
             college=team_obj.college,
         )
+
+    def validate_rollnumber(self, value):
+        team_obj = Acuthon.objects.get(slug=self.context.get('team'))
+        reg = AcuthonRegister.objects.filter(rollnumber=value)
+        if reg.exists():
+            registered = AcuthonRegister.objects.filter(
+                team=team_obj,
+                rollnumber=value,
+            )
+            if registered.exists():
+                raise ValidationError("Team member already exists")
+            raise ValidationError("Team member already exists in some other team")
+        return value
 
     def get_team(self, obj):
         return str(obj.team.name)
