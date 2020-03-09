@@ -20,7 +20,7 @@ class TeamRegisterSerializer(serializers.ModelSerializer):
         return value
 
     def create(self, validated_data):
-        return Acuthon.objects.create(name=validated_data["name"], college=validated_data["college"])
+        return Acuthon.objects.create(name=validated_data['name'], college=validated_data['college'])
 
 
 class AcuthonRegisterSerializer(serializers.ModelSerializer):

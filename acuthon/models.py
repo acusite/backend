@@ -30,6 +30,9 @@ class Acuthon(models.Model):
 
     objects = AcuthonManager()
 
+    def __str__(self):
+        return str(self.name)
+
 
 class AcuthonRegisterManager(models.Manager):
     def create_leader(self, team, member, contact, rollnumber, college, email):
@@ -67,3 +70,6 @@ class AcuthonRegister(models.Model):
     slug = models.SlugField(max_length=8, unique=True, default=generate_id)
 
     objects = AcuthonRegisterManager()
+
+    def __str__(self):
+        return f"{self.member} is a { 'leader' if self.team_leader else 'member'} of {self.team.name}"
