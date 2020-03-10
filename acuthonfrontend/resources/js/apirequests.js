@@ -56,30 +56,35 @@ function createTeam() {
                                 "rollnumber" : roll_number4.value,
                                 })
                                 .then(response4 => console.log(response4))
+                                .catch(err4 => {
+                                    console.log(err4.response.data.rollnumber)
+                                    axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
+                                    .then(res => console.log(res.data))
+                                })
                             }
                          })
                          .catch(err3 => {
-                            console.log(err3)
+                            console.log(err3.response.data.rollnumber)
                             axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
                             .then(res => console.log(res.data))
                         })
                     }
                 })
                 .catch(err2 => {
-                    console.log(err2)
+                    console.log(err2.response.data.rollnumber)
                     axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
                     .then(res => console.log(res.data))
                 })
             }
         })
         .catch(err1 => {
-            console.log(err1)
+            console.log(err1.response.data.rollnumber)
             axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
             .then(res => console.log(res.data))
         })
     })
     .catch(err => {
-        console.log(err)
+        console.log( err.response.data.name)
         axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
         .then(res => console.log(res.data))
     })
