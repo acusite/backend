@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="77d2bbc4-c51b-456a-8f86-6941413666be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acuthonfrontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/acuthonfrontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/acuthonfrontend/resources/js/apirequests.js" beforeDir="false" afterPath="$PROJECT_DIR$/acuthonfrontend/resources/js/apirequests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

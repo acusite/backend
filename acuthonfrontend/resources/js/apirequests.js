@@ -1,11 +1,13 @@
 function createTeam() {
+    // Fields for Team Registration
     const team_name = document.getElementById('Team Name')
+    const college_name = document.getElementById('College Name')
+    // Fields for Leader Registration
     const team_leader_name = document.getElementById('Leader Name')
     const team_leader_mail = document.getElementById('Team Leader mail')
     const roll_number1 = document.getElementById('Roll Number')
-    const college_name = document.getElementById('College Name')
     const contact = document.getElementById('Contact Number')
-
+    // Fields for Members Registration
     const roll_number2 = document.getElementById('Roll Number1')
     const member2_name = document.getElementById('Team Member1')
     const roll_number3 = document.getElementById('Roll Number2')
@@ -59,33 +61,33 @@ function createTeam() {
                                 .catch(err4 => {
                                     console.log(err4.response.data.rollnumber)
                                     axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
-                                    .then(res => console.log(res.data))
+                                    .then(res => console.log(res.response.data))
                                 })
                             }
                          })
                          .catch(err3 => {
                             console.log(err3.response.data.rollnumber)
                             axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
-                            .then(res => console.log(res.data))
+                            .then(res => console.log(res.response.data))
                         })
                     }
                 })
                 .catch(err2 => {
                     console.log(err2.response.data.rollnumber)
                     axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
-                    .then(res => console.log(res.data))
+                    .then(res => console.log(res.response.data))
                 })
             }
         })
         .catch(err1 => {
             console.log(err1.response.data.rollnumber)
             axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
-            .then(res => console.log(res.data))
+            .then(res => console.log(res.response.data))
         })
     })
     .catch(err => {
         console.log( err.response.data.name)
         axios.delete(`http://localhost:8000/acuthon/delete/${slug}/`)
-        .then(res => console.log(res.data))
+        .then(res => console.log(res.response.data))
     })
 }
