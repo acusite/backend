@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="77d2bbc4-c51b-456a-8f86-6941413666be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acuthonfrontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/acuthonfrontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acuthonfrontend/resources/js/apirequests.js" beforeDir="false" afterPath="$PROJECT_DIR$/acuthonfrontend/resources/js/apirequests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acuthon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/acuthon/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/registrations/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/registrations/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrations/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/registrations/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/registrations/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/registrations/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +88,10 @@
     <option name="LAST_COMMIT_MESSAGE" value=".gitignore file added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583336883651">
+    <state x="424" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583918893964">
       <screen x="0" y="23" width="1920" height="1140" />
     </state>
-    <state x="424" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1140@0.23.1920.1140" timestamp="1583336883651" />
+    <state x="424" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1140@0.23.1920.1140" timestamp="1583918893964" />
     <state x="698" y="347" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583654250797">
       <screen x="0" y="23" width="1920" height="1140" />
     </state>
@@ -100,9 +104,9 @@
       <screen x="0" y="23" width="1920" height="1140" />
     </state>
     <state x="560" y="333" key="Vcs.Push.Dialog.v2/0.23.1920.1140@0.23.1920.1140" timestamp="1583427314614" />
-    <state x="637" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1583748150205">
+    <state x="637" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1583901685885">
       <screen x="0" y="23" width="1920" height="1140" />
     </state>
-    <state x="637" y="425" key="com.intellij.ide.util.TipDialog/0.23.1920.1140@0.23.1920.1140" timestamp="1583748150205" />
+    <state x="637" y="425" key="com.intellij.ide.util.TipDialog/0.23.1920.1140@0.23.1920.1140" timestamp="1583901685885" />
   </component>
 </project>
