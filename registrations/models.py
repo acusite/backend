@@ -20,8 +20,9 @@ class Registration(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE)
     player = models.ForeignKey(Profile, on_delete=models.CASCADE)
     slug = models.SlugField(default=generate_id)
+    played = models.BooleanField(default=False)
 
     objects = RegistrationManager()
 
     def __str__(self):
-        return f"{self.player.username} has registered for event {self.event.name}"
+        return f"{self.player.username} has registered for event {self.event.name} -- { 'played' if self.played else 'not yet played'}"

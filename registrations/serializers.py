@@ -53,7 +53,51 @@ class RegisteredListSerializer(serializers.ModelSerializer):
         model = Registration
         fields = [
             'eventName',
+            'played',
+        ]
+        # read_only_fields = ['eventName', ]
+
+    def get_eventName(self, obj):
+        return str(obj.event.name)
+
+    def update(self, instance, validated_data):
+        instance.played = True
+        instance.save()
+        return instance
+
+
+class RegisteredListSerializer(serializers.ModelSerializer):
+    eventName = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Registration
+        fields = [
+            'eventName',
         ]
 
     def get_eventName(self, obj):
         return str(obj.event.name)
+
+
+class PlayedSerializer(serializers.ModelSerializer):
+    eventName = serializers.SerializerMethodField()
+    playerName = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Registration
+        fields = [
+            'eventName',
+            'playerName',
+            'played',
+        ]
+
+    def get_eventName(self, obj):
+        return str(obj.event.name)
+
+    def get_playerName(self, obj):
+        return str(obj.player.username)
+
+    def update(self, instance, validated_data):
+        instance.played = validated_data['played']
+        instance.save()
+        return instance

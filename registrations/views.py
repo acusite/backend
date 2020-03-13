@@ -1,7 +1,12 @@
-from rest_framework.generics import ListAPIView, CreateAPIView
-from .serializers import RegistrationsListSerializer, RegisterSerializer, RegisteredListSerializer
+from rest_framework.generics import ListAPIView, CreateAPIView, UpdateAPIView
+from .serializers import (
+    RegistrationsListSerializer,
+    RegisterSerializer,
+    RegisteredListSerializer,
+    PlayedSerializer,
+)
 from .models import Registration
-from events.models import Event
+from events.models import Event, EventMember
 
 # Create your views here.
 
@@ -11,8 +16,8 @@ class RegistrationsListAPIView(ListAPIView):
     queryset = Registration.objects.all()
 
     def get_queryset(self):
-        event = Event.objects.get(slug=self.request.GET.get("slug"))
-        return Registration.objects.filter(event=event)
+        member = EventMember.objects.get(member=self.request.user)
+        return Registration.objects.filter(event=member.event)
 
 
 class RegisterAPIView(CreateAPIView):
@@ -29,3 +34,18 @@ class RegisteredListAPIView(ListAPIView):
     def get_queryset(self):
         qs = Registration.objects.filter(player=self.request.user)
         return qs
+
+
+class NotYetPlayedListAPIView(ListAPIView):
+    serializer_class = RegistrationsListSerializer
+    queryset = Registration.objects.all()
+
+    def get_queryset(self):
+        event = Event.objects.get(slug=self.request.GET.get("slug"))
+        return Registration.objects.filter(event=event, played=False)
+
+
+class PlayedListAPIView(UpdateAPIView):
+    lookup_field = 'slug'
+    serializer_class = PlayedSerializer
+    queryset = Registration.objects.all()

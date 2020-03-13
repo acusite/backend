@@ -22,4 +22,5 @@ urlpatterns = [
     path('events/', include('events.urls'), name='events_urls'),
     path('registrations/', include('registrations.urls'), name='registrations'),
     path('acuthon/', include('acuthon.urls'), name='acuthon'),
+    path('upvotes/', include('likes.urls'), name='upvotes'),
 ]
